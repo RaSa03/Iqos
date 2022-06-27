@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+  /* div {
+    @apply border border-black;
+  } */
 }
 @layer components {
   .burger-menu {
-    @apply flex absolute top-0 left-0 w-full h-[510px] bg-white font-normal uppercase  flex-col items-center justify-evenly py-10 md:w-[450px];
+    @apply flex absolute top-0 left-0 w-full h-[510px] bg-white font-normal uppercase  flex-col items-center justify-evenly py-7 md:w-[450px];
   }
   .big-menu {
     @apply flex font-normal uppercase grow max-w-5xl justify-between items-center w-8/12;
@@ -62,6 +65,14 @@
   }
   .grey-background {
     background: url("./assets/HeaderBg.png") repeat-x 0 100%, #f5f5f5;
+  }
+  .subnav {
+  }
+  .subnav-content {
+    display: none;
+  }
+  .subnav:hover .subnav-content {
+    display: block;
   }
 
   /* label {
