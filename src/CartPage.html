@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./compiled.css" />
+
+    <title>Product Page</title>
+  </head>
+  <body class="font-font-jost">
+    <header class="font-normal bg-iqos-teal">
+      <div
+        class="flex h-16 lg:h-[83px] whitespace-nowrap bg-white items-center px-3 2xl:px-8 fixed top-0 left-0 right-0 z-50 phone:h-[59px]"
+      >
+        <button
+          onclick="burgerMenu()"
+          type="button"
+          class="mr-20 p-4 xl:hidden shrink-0 phone:p-2 minphone:mr-0"
+        >
+          <img class="" src="./assets/MenuBurger.png" alt="" />
+        </button>
+        <div class="lg:w-1/12 2xl:mr-2 shrink-0 mx-auto px-2">
+          <img src="./assets/Vector.svg" alt="" class="h-6 w-20" />
+        </div>
+        <div id="menu" class="notebook:hidden notebook:burger-menu xl:big-menu">
+          <button
+            class="absolute right-3 top-3 xl:hidden"
+            onclick="burgerMenu()"
+          >
+            <img src="./assets/error.png" alt="" />
+          </button>
+          <div><a href="#ActualStock">Actual stock</a></div>
+          <div><a href="#IqosHeets">IQOS HEETS IN ksa</a></div>
+          <div><a href="#IqosLilSolid">iqos lil solid</a></div>
+          <div><a href="#IqosIluma">iqos iluma</a></div>
+          <div><a href="#IqosAccessories">iqos accessories</a></div>
+          <div><a href="#Faq">faq</a></div>
+          <div class="bg-gray-200 normal-case rounded-full py-1 px-3 flex">
+            <div class="mx-2">Language</div>
+            <button type="button">EN</button>
+            <button type="button" class="mx-2">AR</button>
+          </div>
+          <button
+            type="button"
+            class="flex xl:hidden mx-auto rounded-full border border-black p-1 px-3 items-center hover:bg-[#4CAF50] hover:text-white"
+          >
+            <img
+              class="w-4 h-4 mr-1"
+              src="./assets/_x30_8.Whatsapp.svg"
+              alt=""
+            />
+            <span>WhatsApp Support</span>
+          </button>
+        </div>
+        <div class="flex xl:grow ml-3">
+          <div class="xl:grow">
+            <button
+              type="button"
+              class="hidden xl:flex mx-auto rounded-full sm:border border-black p-1 px-3 items-center hover:bg-[#4CAF50] hover:text-white"
+            >
+              <img
+                class="w-4 h-4 mr-1"
+                src="./assets/_x30_8.Whatsapp.svg"
+                alt=""
+              />
+              <span>WhatsApp Support</span>
+            </button>
+          </div>
+          <div class="xl:grow flex justify-end">
+            <div
+              class="bg-iqos-teal uppercase flex p-1 px-3 rounded-full items-center ml-1 phone:ml-0 phone:py-0"
+            >
+              <img
+                class="w-4 mr-1 phone:mr0"
+                src="./assets/korzinkapustaya.svg"
+                alt=""
+              />
+              <div class="text-end grow self-end w-16 whitespace-nowrap">
+                0 sar
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="fixed top-0 left-0 right-0 z-40 h-[30px] sm:h-12 lg:h-16 bg-iqos-teal phone:mt-[59px] mt-16 lg:mt-[83px] text-white px-4 flex items-center text-[10px] sm:text-sm lg:text-xl 2xl:px-10"
+      >
+        <div class="mx-2 phone:mx-1">Home</div>
+        <img class="tablet:h-3 phone:h-2" src="./assets/Arrow.svg" alt="" />
+        <div class="mx-2 phone:mx-1">Iqos Heets in KSA</div>
+        <img class="tablet:h-3 phone:h-2" src="./assets/Arrow.svg" alt="" />
+        <div class="mx-2 phone:mx-1 font-medium">Heets Terea Purple Mint</div>
+      </div>
+    </header>
+
+    <main class="pt-24 sm:pt-32 lg:pt-40 2xl:pt-48">
+      <div
+        class="flex flex-col px-4 xl:flex-row xl:justify-evenly tablet:items-center md:flex-row md:justify-between"
+      >
+        <div class="xl:mr-5 text-[15px] xl:text-2xl">
+          <div class="flex flex-col notebook:items-center">
+            <div class="text-3xl leading-snug xl:text-5xl xl:leading-relaxed">
+              Shopping cart
+            </div>
+            <button class="flex leading-snug py-1">
+              <img
+                class="mr-2 xl:w-10"
+                src="./assets/arrowCartPage.svg"
+                alt=""
+              />
+              Continue shopping
+            </button>
+            <div class="text-[#747474] py-2 mt-3">
+              Check the quantity of selected items
+            </div>
+          </div>
+
+          <div class="mt-6 2xl:w-[900px]">
+            <div class="bg-light-grey flex">
+              <div class="w-24 xl:w-44 shrink-0">
+                <img
+                  class="w-24 xl:w-44"
+                  src="./assets/Ptoducts/PhotoHeetsruby5806804.png"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="flex flex-grow border-b border-black flex-wrap justify-center items-center p-2 pl-0 2xl:flex-nowrap"
+              >
+                <div class="flex w-full 2xl:w-3/4">
+                  <div class="font-light flex-grow">
+                    Heets Terea Purple Mint
+                  </div>
+                  <button type="button" class="p-2 2xl:hidden">
+                    <img
+                      class="w-[14px] self-start xl:w-5"
+                      src="./assets/Closeicon2.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <div
+                  class="flex w-full items-center flex-wrap py-1 xl:flex-nowrap whitespace-nowrap"
+                >
+                  <div class="flex-grow">
+                    <span>998 SAR</span
+                    ><span class="line-through ml-1"> 1199 SAR</span>
+                  </div>
+                  <div class="border border-black rounded-full mr-5 2xl:mr-7">
+                    <button class="py-1 px-2.5 lg:px-4">-</button>
+                    <span class="px-0.5">2</span>
+                    <button class="py-1 px-2.5 lg:px-4">+</button>
+                  </div>
+                  <button type="button" class="p-2 hidden 2xl:block">
+                    <img class="w-6" src="./assets/Closeicon2.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="bg-light-grey flex">
+              <div class="w-24 xl:w-44 shrink-0">
+                <img
+                  class="w-24 xl:w-44"
+                  src="./assets/Ptoducts/PhotoHeetsruby5806802.png"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="flex flex-grow border-b border-black flex-wrap justify-center items-center p-2 pl-0 2xl:flex-nowrap"
+              >
+                <div class="flex w-full 2xl:w-3/4">
+                  <div class="font-light flex-grow">
+                    IQOS ILuma Prime Obsidian Black
+                  </div>
+                  <button type="button" class="p-2 2xl:hidden">
+                    <img
+                      class="w-[14px] self-start xl:w-5"
+                      src="./assets/Closeicon2.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <div
+                  class="flex w-full items-center flex-wrap py-1 xl:flex-nowrap whitespace-nowrap"
+                >
+                  <div class="flex-grow">
+                    <span>1399 SAR</span>
+                  </div>
+                  <div class="border border-black rounded-full mr-5 2xl:mr-7">
+                    <button class="py-1 px-2.5 lg:px-4">-</button>
+                    <span class="px-0.5">1</span>
+                    <button class="py-1 px-2.5 lg:px-4">+</button>
+                  </div>
+                  <button type="button" class="p-2 hidden 2xl:block">
+                    <img class="w-6" src="./assets/Closeicon2.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tablet:pt-10 max-w-[550px] xl:pt-0 flex-grow xl:max-w-[700px] 2xl:max-w-[825px]"
+        >
+          <div
+            class="text-3xl leading-snug font-light notebook:text-center py-3 md:pt-0 xl:text-5xl xl:flex flex-wrap xl:leading-relaxed"
+          >
+            <div class="font-normal xl:mr-auto">Total:<span>1399</span>SAR</div>
+            <div class="xl:-order-10 xl:mr-auto">Finish Order</div>
+            <div class="text-[#888888]">Fill in all required fields</div>
+          </div>
+
+          <form
+            class="bg-iqos-grey flex flex-col p-6 text-xl font-light xl:flex-row flex-wrap xl:text-2xl xl:justify-between bigforProductPForm:px-14"
+            action=""
+            method=""
+          >
+            <div class="flex flex-col 2xl:flex-grow 2xl:max-w-[280px]">
+              <span>First name</span>
+              <input
+                class="outline-none h-11 mb-2 border border-[#777777] px-2 xl:h-16"
+                type="text"
+                name="FirstName"
+                id=""
+              />
+            </div>
+            <div class="flex flex-col xl:flex-grow xl:ml-12 2xl:max-w-[370px]">
+              <span>Last name</span>
+              <input
+                class="outline-none h-11 mb-2 border border-[#777777] px-2 xl:h-16"
+                type="text"
+                name="LastName"
+                id=""
+              />
+            </div>
+            <div class="flex flex-col 2xl:flex-grow 2xl:max-w-[280px] 2xl:mt-3">
+              <span>WhatsApp Number</span>
+              <input
+                class="outline-none h-11 mb-2 border border-[#777777] px-2 xl:h-16"
+                type="text"
+                name="WhatsAppNumber"
+                id=""
+              />
+            </div>
+            <div
+              class="flex flex-col xl:flex-grow xl:ml-12 2xl:max-w-[370px] 2xl:mt-3"
+            >
+              <span>Email</span>
+              <input
+                class="outline-none h-11 mb-2 border border-[#777777] px-2 xl:h-16"
+                type="text"
+                name="Email"
+                id=""
+              />
+            </div>
+            <div
+              class="flex flex-col xl:order-2 xl:flex-grow 2xl:max-w-[370px] 2xl:ml-3 bigforProductPForm:ml-10 2xl:mt-3"
+            >
+              <span>Adress for delivery</span>
+              <input
+                class="outline-none h-11 mb-2 border border-[#777777] px-2 xl:h-16"
+                type="text"
+                name="AdressForDelivery"
+                id=""
+              />
+            </div>
+
+            <div class="xl:order-1 2xl:mt-3">
+              <span>Choose city for delivery:</span>
+              <div class="flex items-center 2xl:mt-4">
+                <input
+                  class="radio"
+                  type="radio"
+                  name="City"
+                  id="Riadh"
+                  checked
+                />
+                <label class="labelRiadh" for="Riadh"></label>
+                <span class="mx-1">Riadh</span>
+
+                <input class="radio" type="radio" name="City" id="Jeddah" />
+                <label class="labelJeddah" for="Jeddah"></label>
+                <span class="mx-1">Jeddah</span>
+
+                <input class="radio" type="radio" name="City" id="other" />
+                <label class="labelother" for="other"></label>
+                <span class="mx-1">Other City</span>
+              </div>
+            </div>
+            <div class="xl:order-3">
+              <span class="mt-2">Choose way of payment:</span>
+              <div class="flex items-center 2xl:mt-4">
+                <input
+                  class="radio"
+                  type="radio"
+                  name="payment"
+                  id="Riadh"
+                  checked
+                />
+                <label class="" for="Cash&Delivery"></label>
+                <span class="mx-1">Cash&Delivery</span>
+
+                <input class="" type="radio" name="payment" id="" />
+                <label class="" for=""></label>
+                <span class="mx-1">Online Payment</span>
+              </div>
+            </div>
+
+            <div
+              class="border border-[#777777] py-2 px-4 bg-white mt-4 xl:order-4 2xl:hidden"
+            >
+              Pay online - get priority for delivery
+            </div>
+            <div class="flex justify-center mt-5 xl:order-5">
+              <button
+                class="uppercase bg-iqos-teal text-white px-6 py-2 rounded-3xl"
+              >
+                add to cart
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      id="Faq"
+      class="bg-black py-8 px-8 md:px-14 lg:grid grid-cols-2 text-white mt-24 2xl:mt-40 tablet:text-center phone:font-light"
+    >
+      <div class="mb-4 tablet:flex justify-center">
+        <img src="./assets/FooterLogo.png" alt="" />
+      </div>
+      <div
+        class="row-span-2 text-sm flex justify-between tablet:flex-col tablet:items-center"
+      >
+        <div>
+          <div class="font-semibold mt-5 mb-2 md:my-4">Catalog</div>
+          <ul class="text-[#A4A4A4] leading-normal">
+            <li class="font-medium text-white"><a href="#">Actual Stock</a></li>
+            <li><a href="#">Iqos Heets In KSA</a></li>
+            <li><a href="#">Iqos Lil Solid </a></li>
+            <li><a href="#">Iqos Iluma</a></li>
+            <li><a href="#">Iqos Accessories</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-semibold mt-5 mb-2 md:my-4">Quick Links:</div>
+          <ul class="text-[#A4A4A4] leading-normal">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-semibold mt-5 mb-2 md:my-4">Contact Us</div>
+          <ul class="leading-normal">
+            <li>
+              <a href="mailto:sales@saudiarabiastick.online"
+                >sales@saudiarabiastick.online</a
+              >
+            </li>
+            <li><a href="#">Heets Jeddah</a></li>
+            <li><a href="#">Heets Riadh</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="md:w-96">
+        <div class="text-sm py-3 mb-4 tablet:border-b border-b-white/30">
+          Buy IQOS Heets in Kingdom Saudi Arabia With Free Delivery. Courier
+          Delivery in the Cities of Riyadh and Jeddah. Our online store is not
+          affiliated in any way with Philip Morris International (PMI). This is
+          not the official website of PMI and IQOS.
+        </div>
+        <div class="text-[9px]">Copyright © 2022 | All Rights Reserved.</div>
+      </div>
+    </footer>
+
+    <script>
+      function burgerMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("notebook:hidden");
+      }
+    </script>
+  </body>
+</html>

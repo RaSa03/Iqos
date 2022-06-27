@@ -3,44 +3,48 @@
 @tailwind utilities;
 
 @layer base {
-  /* div {
-    @apply border;
-  }
-  section {
-    @apply border;
-  } */
 }
 @layer components {
+  .burger-menu {
+    @apply flex absolute top-0 left-0 w-full h-[510px] bg-white font-normal uppercase  flex-col items-center justify-evenly py-10 md:w-[450px];
+  }
+  .big-menu {
+    @apply flex font-normal uppercase grow max-w-5xl justify-between items-center w-8/12;
+  }
   .heets-title {
-    @apply text-4xl py-1.5 mx-auto w-max uppercase mt-24 title-text-shadow;
+    @apply text-3xl md:text-4xl py-1.5 mx-auto w-max uppercase title-text-shadow text-center phone:font-light;
   }
   .product-card {
-    @apply px-6 py-8 shadow-drop-shadow flex flex-col hover:shadow-hover-drop
-    mx-auto w-auto 2xl:w-[23%];
+    @apply px-2 py-3 md:px-6 md:py-8 shadow-drop-shadow flex flex-col hover:shadow-hover-drop mx-2
+    md:mx-auto items-center;
   }
   .save-sar-teal {
-    @apply text-base px-2 py-1 text-white uppercase rounded-full bg-iqos-teal;
+    @apply text-[8px] md:text-base px-2 md:py-1 text-white uppercase rounded-full bg-iqos-teal;
   }
   .red-new {
-    @apply text-base text-white uppercase rounded-[30px] bg-[#FF5F5F] px-2 py-1;
+    @apply text-[8px] md:text-base text-white uppercase rounded-[30px] bg-[#FF5F5F] px-2 md:py-1;
   }
   .product-title {
-    @apply text-xl uppercase text-center mb-4 w-[310px];
+    @apply text-xl uppercase text-center mb-1 md:mb-4 w-full tablet:text-[14px] phone:leading-tight;
   }
   .product-subtitle {
-    @apply text-base text-[#5E5E5E] uppercase text-center mb-5 w-[310px];
+    @apply text-base text-[#5E5E5E] uppercase text-center mb-1 md:mb-5 w-full tablet:text-[14px] phone:leading-tight;
   }
   .white-button {
-    @apply text-xl  py-3 px-6 rounded-full text-black border border-black;
+    @apply text-xl  md:py-3 px-4 md:px-8 rounded-[40px] text-black border border-black phone:font-light text-center;
+  }
+  .one {
+    @apply mx-2;
   }
   .add-to-cart-button {
-    @apply bg-iqos-teal text-xl text-white py-3 px-6 rounded-full;
+    @apply bg-iqos-teal text-[14px] md:text-xl text-white py-1 md:py-3 px-3
+     md:px-7 rounded-3xl;
   }
   .iqos-info-title {
-    @apply font-light text-5xl text-end;
+    @apply font-light text-3xl md:text-5xl xl:text-end mb-5 notebook:text-center;
   }
   .iqos-info-text {
-    @apply font-light text-xl text-end;
+    @apply font-light text-xl md:text-xl xl:text-end phone:px-2 notebook:text-center;
   }
 }
 @layer utilities {
@@ -50,6 +54,46 @@
   .delivery-options {
     width: calc(100% - 850px);
   }
+  .tablet-background {
+    background: url("./assets/HeaderBg.png") repeat-x 0 100%;
+  }
+  .teal-background {
+    background: url("./assets/HeaderBg.png") repeat-x 0 100%, #1cccb9;
+  }
+  .grey-background {
+    background: url("./assets/HeaderBg.png") repeat-x 0 100%, #f5f5f5;
+  }
+
+  /* label {
+    position: relative;
+    font: bold 24px/1.5 cursive;
+    margin-left: 24px;
+  }
+  .labelRiadh {
+    margin-left: 10px;
+  }
+  .radio {
+    display: none;
+  }
+  label:before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 7px);
+    left: -16px;
+  }
+  #other:checked ~ .labelother:before {
+    background-color: black;
+  }
+  #Riadh:checked ~ .labelRiadh:before {
+    background-color: black;
+  }
+  #Jeddah:checked ~ .labelJeddah:before {
+    background-color: black;
+  } */
 }
 
 @media (min-width: 1760px) {
